@@ -1,141 +1,113 @@
 # MIX
 
-> Experimental autonomous AI platform for safe long-horizon task execution.
+> Local-first autonomous AI desktop platform for long-horizon task execution.
 
-MIX is an experimental research project exploring autonomous AI systems capable of executing complex, long-horizon tasks by combining local language models, vision-language models, speech interfaces, persistent memory, and external tools within a unified runtime.
+MIX is an experimental AI desktop platform designed to execute complex long-running workflows using local language models, multimodal reasoning, persistent memory, autonomous planning, and safe tool execution.
 
-The project focuses on building reliable AI agents that can plan, execute, validate, and recover from complex workflows while keeping humans in control of critical decisions.
-
----
-
-## Research Focus
-
-- Autonomous AI agents
-- Long-horizon task execution
-- Hybrid local/cloud reasoning
-- Vision-language integration
-- Voice interaction
-- Persistent memory
-- Safe tool execution
-- Execution validation
-- Human-in-the-loop supervision
+Unlike traditional chat assistants, MIX combines an interactive desktop application with a modular AI runtime capable of coordinating multiple AI models, external applications, and long-running autonomous tasks.
 
 ---
 
-## Current Capabilities
+# Features
 
-### Runtime
+## 🧠 AI Runtime
 
-- Autonomous Runtime
-- Multi-Brain Architecture
-- Runtime Dispatcher
-- Persistent Memory
-- Live Context
-- Execution Validation
-- Rollback & Recovery
+- Multi-step ReAct execution
+- Autonomous planning
+- Parallel sub-agents
+- Multi-model routing
+- Tool calling
+- Long-running tasks
 
-### AI
+## 👁 Vision
 
-- Local LLM Integration
-- Vision Analysis
+- Image understanding
+- Screenshot analysis
+- Desktop awareness
+
+## 🎤 Voice
+
+- Wake Word
 - Speech-to-Text
-- Text-to-Speech
-- Voice Interaction
-- Intelligent Task Routing
+- Natural Text-to-Speech
+- Voice conversations
 
-### Integrations
+## 🧩 Skills
 
-- Telegram Interface
+50+ built-in skills
+
+Examples:
+
+- Code editing
+- Project management
+- Obsidian integration
+- Web research
+- Browser automation
+- Calendar
+- Gmail
+- Weather
+- Terminal
+- Git
 - ComfyUI
-- External Tool Execution
+- Desktop control
+
+## 🧠 Memory
+
+- Long-term memory
+- RAG
+- Project memory
+- Entity pages
+- Knowledge management
+
+## 🛡 Safety
+
+- Validation
+- Rollback
+- Permission gates
+- Verification
+- Action journal
+- Anti-hallucination protection
 
 ---
 
-## Technology Stack
+# Architecture
+
+User
+↓
+Desktop UI (Electron)
+↓
+Flask Backend
+↓
+Brain Manager
+↓
+ReAct Runtime
+↓
+Skills
+↓
+Memory
+↓
+Desktop / Browser / AI Models
+
+---
+
+# Technology
 
 - Python
+- Electron
+- Flask
 - Ollama
 - Gemma 4
-- Qwen
+- Chatterbox
 - Whisper
-- OmniVoice
+- ChromaDB
 - ComfyUI
-- Telegram Bot API
+- Telegram
+- Obsidian
 
 ---
 
-## Planned Architecture
+# Project Status
 
-```text
-                 User
-                   │
-          Intent Processing
-                   │
-            Brain Manager
-         ┌─────────┴─────────┐
-         │                   │
-    Local AI Models     Cloud AI Models
-         │                   │
-         └─────────┬─────────┘
-                   │
-         Autonomous Runtime
-                   │
-      Validation & Safety Layer
-                   │
-         Memory & Knowledge
-                   │
-          External Integrations
-```
+🚧 Active Development
 
----
-
-## Roadmap
-
-### Completed
-
-- Multi-brain runtime
-- Persistent memory
-- Vision analysis
-- Voice interaction
-- Runtime dispatcher
-- Telegram integration
-- Execution validation
-- Rollback mechanisms
-
-### In Progress
-
-- Autonomous mission scheduler
-- Continuous background execution
-- Multi-device coordination
-- Advanced planning strategies
-
-### Future Research
-
-- Distributed autonomous runtime
-- Self-improving workflows
-- Research benchmarks
-- Public SDK
-
----
-
-## Project Status
-
-🚧 Active Research & Development
-
-MIX is currently under active development as an experimental research platform for autonomous AI systems.
-
-This repository provides a public overview of the project.
-
-The implementation remains private while the architecture continues to evolve.
-
----
-
-## Vision
-
-The long-term goal of MIX is to explore safe, transparent, and reliable autonomous AI systems capable of assisting humans with complex technical and creative workflows while maintaining meaningful human oversight.
-
----
-
-## License
-
-No license has been assigned at this stage.
+MIX is under continuous development as an experimental autonomous AI desktop platform.
